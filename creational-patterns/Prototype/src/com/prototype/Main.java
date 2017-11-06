@@ -10,9 +10,11 @@ import com.prototype.tetris.shapes.special_shapes.*;
 import java.util.ArrayList;
 import java.util.Collection;
 
-public class Main {
+public final class Main {
 
-    private static ArrayList<Shape> _shapes = new ArrayList<>();
+    private Main() {}
+
+    private static ArrayList<Shape> _shapes;
 
     private static ShapeFactory makeNormalPieceFactory() {
         //Shape i, Shape j, Shape l, Shape o, Shape s, Shape t, Shape z
