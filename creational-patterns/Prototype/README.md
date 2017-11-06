@@ -30,7 +30,8 @@ Specify the kinds of objects to create using a prototypical instance, and create
   If you look at the Shape class you can see that its position field is initialized to 'UP'.
   What if we don't want a piece to be initialized to 'UP' any longer and more reasonably what if we want it to be based
   on preference? We don't want to recompile the code every time we want a different default Shape state. Prototype solves this because
-  we can declare. In the current implementation we require the orientation upon creation of a shape. So in this case the default
+  we have the opportunity to set preferred state before giving the prototype up to a factory or prototype manager where the prototype becomes
+  cloned. In the current implementation we require the orientation upon creation of a shape. So in this case the default
   is always overridden.
 </p>
 
